@@ -1,0 +1,21 @@
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+    "shader"
+]
+
+[workspace.dependencies]
+spirv-std = { git = "https://github.com/Rust-GPU/rust-gpu.git" }
+
+[package]
+name = "rust_gpu_union_issue"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+
+[build-dependencies]
+spirv-builder = { git = "https://github.com/Rust-GPU/rust-gpu.git" }
