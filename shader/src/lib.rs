@@ -3,22 +3,22 @@ use spirv_std::{spirv, glam::UVec3};
 
 #[repr(C)]
 #[derive(Clone, Copy)]
-struct Data {
-    a: f32,
-    b: [f32; 3],
-    c: f32,
+pub struct Data {
+    pub a: f32,
+    pub b: [f32; 3],
+    pub c: f32,
 }
 
 #[derive(Clone, Copy)]
-union DataOrArray {
+pub union DataOrArray {
     arr: [f32; 5],
     str: Data,
 }
 
 impl DataOrArray {
-    fn arr(self) -> [f32; 5] { unsafe { self.arr } }
-    fn str(self) -> Data { unsafe { self.str } }
-    fn new(arr: [f32; 5]) -> Self { Self { arr } }
+    pub fn arr(self) -> [f32; 5] { unsafe { self.arr } }
+    pub fn str(self) -> Data { unsafe { self.str } }
+    pub fn new(arr: [f32; 5]) -> Self { Self { arr } }
 }
 
 
