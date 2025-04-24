@@ -16,6 +16,7 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
+libm = "<0.2.12"
 
 [build-dependencies]
 spirv-builder = { git = "https://github.com/Rust-GPU/rust-gpu.git" }
