@@ -8,7 +8,7 @@ members = [
 ]
 
 [workspace.dependencies]
-spirv-std = { git = "https://github.com/Rust-GPU/rust-gpu.git" }
+spirv-std = { git = "https://github.com/Rust-GPU/rust-gpu.git", rev="c6c8056928c35e5bc673ee9f4bce34a628454627" }
 
 [package]
 name = "rust_gpu_union_issue"
@@ -18,4 +18,4 @@ edition.workspace = true
 [dependencies]
 
 [build-dependencies]
-spirv-builder = { git = "https://github.com/Rust-GPU/rust-gpu.git" }
+spirv-builder = { git = "https://github.com/Rust-GPU/rust-gpu.git", rev="c6c8056928c35e5bc673ee9f4bce34a628454627" }
